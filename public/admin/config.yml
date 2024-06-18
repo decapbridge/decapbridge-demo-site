@@ -1,0 +1,45 @@
+# =======================================
+# DecapCMS configuration
+# Learn more at https://decapcms.org/
+# =======================================
+
+local_backend: true
+backend:
+  name: git-gateway
+
+# backend:
+#   name: github
+#   repo: loteoo/site-starter
+
+site_url: http://localhost:3000
+# logo_url: http://localhost:3000/logo.svg
+
+locale: en
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+media_folder: public/uploads
+public_folder: /uploads
+
+
+collections:
+
+  # ============================
+  # Main pages
+  # ============================
+  - label: Main Pages
+    name: pages
+    editor:
+      preview: false
+    files:
+
+      # Home page
+      # ===================
+      - name: homepage
+        label: Home page
+        file: content/cms.json
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
