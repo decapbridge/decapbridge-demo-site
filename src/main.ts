@@ -10,6 +10,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </div>
     <div class="card">
       <a href="/admin/index.html" class="button">Edit this page</a>
+      <a href="https://github.com/decapbridge/decapbridge-demo-site/tree/main" class="button">View on Github</a>
     </div>
     <p class="dimmed">
       DecapBridge is powered by <a href="https://millisecond.studio/" target="_blank">millisecond.studio</a>.
