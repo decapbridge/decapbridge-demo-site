@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   repo: decapbridge/decapbridge-demo-site
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/abf324cd-366a-48d1-9cb2-247fef8f6b21
+  identity_url: https://auth.decapbridge.com/sites/afa3891e-df90-4113-a314-f07ab6da348b
   gateway_url: https://gateway.decapbridge.com
 
   # Quickly see who did what (optional)
