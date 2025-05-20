@@ -1,7 +1,7 @@
 # Use DecapBridge auth (required)
 backend:
   name: git-gateway
-  repo: loteoo/decap-bridge-demo-site
+  repo: decapbridge/decapbridge-demo-site
   branch: main
   identity_url: https://auth.decapbridge.com/sites/abf324cd-366a-48d1-9cb2-247fef8f6b21
   gateway_url: https://gateway.decapbridge.com
@@ -19,7 +19,7 @@ backend:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in DecapCMS (optional)
-site_url: https://decap-bridge-demo-site.pages.dev
+site_url: https://decapbridge-demo-site.pages.dev
 
 locale: en
 
