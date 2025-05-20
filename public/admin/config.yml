@@ -1,18 +1,25 @@
-# =======================================
-# DecapCMS configuration
-# Learn more at https://decapcms.org/
-# =======================================
-
-local_backend: true
+# Use DecapBridge auth (required)
 backend:
   name: git-gateway
+  repo: loteoo/decap-bridge-demo-site
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/abf324cd-366a-48d1-9cb2-247fef8f6b21
+  gateway_url: https://gateway.decapbridge.com
 
-# backend:
-#   name: github
-#   repo: loteoo/site-starter
+  # Quickly see who did what (optional)
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} via DecapBridge
 
-site_url: http://localhost:3000
-# logo_url: http://localhost:3000/logo.svg
+# Better Decap + Bridge logo (optional)
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+
+# Add site links in DecapCMS (optional)
+site_url: https://decap-bridge-demo-site.pages.dev
 
 locale: en
 
@@ -23,9 +30,7 @@ slug:
 media_folder: public/uploads
 public_folder: /uploads
 
-
 collections:
-
   # ============================
   # Main pages
   # ============================
@@ -34,12 +39,11 @@ collections:
     editor:
       preview: false
     files:
-
       # Home page
       # ===================
       - name: homepage
         label: Home page
         file: content/cms.json
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'text' }

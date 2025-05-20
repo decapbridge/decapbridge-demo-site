@@ -9,13 +9,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       ${content.description}
     </div>
     <div class="card">
-      <a href="/admin/index.html" target="_blank" class="button">Edit this page</a>
-    </div>
-    <div class="card">
-      <a href="https://github.com/loteoo/decap-bridge" target="_blank">Github</a>
+      <a href="/admin/index.html" class="button">Edit this page</a>
     </div>
     <p class="dimmed">
-      Powered by Decap Bridge and millisecond.studio
+      DecapBridge is powered by <a href="https://millisecond.studio/" target="_blank">millisecond.studio</a>.
     </p>
   </div>
 `;
