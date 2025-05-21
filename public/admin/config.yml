@@ -1,9 +1,9 @@
 # Use DecapBridge auth (required)
 backend:
   name: git-gateway
-  repo: decapbridge/decapbridge-demo-site
+  repo: loteoo/decapbridge-demo-site
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/afa3891e-df90-4113-a314-f07ab6da348b
+  identity_url: https://auth.decapbridge.com/sites/3a50bd5e-79a1-4d0b-b5de-b399a7605444
   gateway_url: https://gateway.decapbridge.com
 
   # Quickly see who did what (optional)
